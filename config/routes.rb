@@ -1,4 +1,5 @@
 Pinteresting::Application.routes.draw do
+  devise_for :users
   root "pages#home"
   get "about" => "pages#about" # GET creates 'about' path. if we said GET something, then we'd have to say something_path
 
